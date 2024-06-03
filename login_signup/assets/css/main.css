@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Warownia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local ('Warownia Regular') url(../fonts/Warownia.woff) format('woff');
+    }
+@font-face {
+        font-family: 'Warownia Extended';
+        font-style: normal;
+        font-weight: normal;
+        src: local ('Warownia Extended') url(../fonts/WarowniaExt.woff) format('woff');
+        }
+@font-face {
+        font-family: 'Warownia Ultra Extended';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Warownia Ultra Extended'), url(../fonts/WarowniaUltExt.woff) format('woff');
+        }
+@font-face {
+        font-family: 'Rimouski';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Rimouski'), url(../fonts/rimouski.woff) format('woff');
+        }
+
+:root { --primary-color: #071075; 
+    --secondary-color: #30A5D8;
+    --blue: #06436F;
+    --white: #F7FAFC;
+    --yellow: #FBEF04;
+    --black: #272D2A;
+
+/* Font Size Desktop */
+    --header-1: 64px;
+    --header-2: 48px;
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --text-medium: 18px;
+    --text-regular: 16px;
+    --text-light: 13px;
+
+    --font-weight-bold:700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    }
+
+    
+body {
+    font-family:'Warownia Regular Extended';
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+.navbar{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+a.navbar-brand{
+
+    padding-left: 30px;
+}
+.navbar a.nav-link{
+    font-family:'Warownia';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    width: 125px;
+    letter-spacing: 1.5px;
+
+  }
+.navbar a.nav-link.active{
+    font-family: Warownia;
+    color: var(--yellow);
+    width: 100px;
+}
+.navbar a.nav-link:hover {
+    color: var(--yellow);
+}
+a.btn.btn-primary{
+    font-family: Warownia;
+    background-color: var(--primary-color);
+    border-radius: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-block: 10px;
+    position: inherit;
+    letter-spacing: 1.5px;
+}
+a.btn.btn-primary:active {
+    color: var(--yellow);
+}
+a.btn.btn-primary:hover {
+    color: var(--yellow);
+}
+
+/* BOOKING STYLE */
+
+body {
+    font-family: Rimouski;
+}
+.h2.text-center.mt-5{
+    font-family: Rimouski;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+.nav-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       
+}
+.nav-steps div {
+    flex-grow: 3;
+    padding: 15px;
+    border: 1px solid #ccc;
+    color: var(--white);
+    border-radius: 50%;
+    background-color: #B7B7B7;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 75px;
+    z-index: 1;
+}
+/* PROGRESS BAR SANA
+
+.progress-bar{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: var(--secondary-color);
+    margin: 0 auto;
+}
+
+div.progress-bar .indicator{
+    position: absolute;
+    height: 4%;
+    width: 100%;
+    top: 40%;
+    left: 60%;
+    background: var(--secondary-color);
+    transform: translate(-70%, -70%);
+    margin: 0 auto;
+    display: block;
+} 
+*/
+
+
+div.schedule-heading{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+div.container.d-flex.align-content-center.text-center.m-0{
+    justify-content: center;
+    text-align: end;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    gap: 20px;
+
+
+}
+.service-details{
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+
+}
+
+
+.nav-steps div.active {
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    position: inherit;
+}
+h1.text-left.mt-5{
+    font-family: Rimouski;
+    margin-bottom: 0;
+}
+span#currentDateTime{
+    font-family: Poppins;
+}
+
+form#multiStepForm{
+    font-family: Rimouski;
+    background-color: #F7FAFC;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    }
+
+button.btn.btn-primary,
+button.btn.btn-secondary{
+    font-family:Warownia;
+     color: var(--primary-color);
+    background-color: var(--white);
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 0.3em;
+    width: 120px;
+}
+button.btn.btn-primary:hover,
+button.btn.btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+a.btn.btn-primary:active,
+a.btn.btn-secondary:active {
+    color: var(--primary-color);
+
+}
+button.submit.btn.btn-primary{
+    color: var(--white);
+    background-color: var(--primary-color);
+    width: auto;
+}
+
+button.dashboard.btn.btn-primary{
+    font-family: Warownia Regular;
+
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+span.float-end {
+    float: right;
+    padding-right: 40px;
+}
+
+
+span#summaryFirstName,
+span#summaryLastName,
+span#summaryPhoneNumber,
+span#summaryEmailAddress,
+span#summarypickServices,
+span#summarySuggestions,
+span#summaryAddress,
+span#summaryOtherLocation,
+span#summaryShippingMethod,
+span#summaryPaymentMethod
+{
+    color: var(--primary-color);
+    text-decoration-line: underline;
+    text-align: center;
+    
+}
+
+input[type="radio"]{
+    display: none;
+}
+div.form-group{
+    gap: 150em;
+    display: block;
+    margin-bottom: 30px;
+}
+.form-check label{
+    min-width: 150px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid var(--black);
+    border-radius: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-check input:checked + label{
+    background: var(--secondary-color);
+    color: var(--white);
+}
+.form-check input{
+    display: none;
+}
+div.row,
+div.col{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    
+}
+input#pickupDate.form-control,
+input#pickupTime.form-control,
+textarea#Suggestions.form-control,
+input#firstName.form-control,
+input#lastName.form-control,
+input#phoneNumber.form-control,
+input#emailAddress.form-control,
+input#address.form-control,
+input#otherLocation.form-control
+{
+    background-color: var(--white);
+    border: 0.1px solid var(--black);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+p.alert.alert-danger{
+    margin-top: 2px;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    form#multiStepForm{
+        font-family: Rimouski;
+        background-color: #F7FAFC;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        }
+        div.schedule-heading{
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+        span.float-end {
+            padding-right: 0px;
+            position: relative;
+            left: 30px;
+
+        }
+        button.dashboard.btn.btn-primary{
+            font-family: Warownia Regular;
+            width: 80%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: x-small;
+        }
+        a.navbar-brand{
+            padding-left: 0;
+        }
+        span#currentDateTime{
+            font-size: small;
+        }
+        p1.service-details{
+            font-size: x-small;
+            min-width: 30%;
+            font-weight: 500;
+            margin: 0px;
+            padding: 0;
+        }
+        div.container.d-flex.align-content-center.text-center.m-0.fw-medium{
+            justify-content: center;
+            text-align: end;
+            margin: 0 auto;
+            max-width: 100%;
+            gap: 20px;
+
+        
+        }
+        .step.active {
+            display: block;
+        }
+
+        .nav-steps div {
+            padding: 5px;
+            border: 1px solid #ccc;
+            color: var(--white);
+            border-radius: 50%;
+            background-color: #B7B7B7;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 52px;
+            column-gap: 10px;
+        }
+        label h3{
+            font-size: large;
+        }
+        input#pickupDate.form-control,
+        input#pickupTime.form-control,
+        textarea#Suggestions.form-control,
+        input#firstName.form-control,
+        input#lastName.form-control,
+        input#phoneNumber.form-control,
+        input#emailAddress.form-control,
+        input#address.form-control,
+        input#otherLocation.form-control
+        {
+            background-color: var(--white);
+            border: 0.1px solid var(--black);
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: smaller;
+
+        }           
+        input[type="radio"]{
+            display: none;
+        }
+        div.form-group{
+            gap: 150em;
+            display: block;
+            margin-bottom: 30px;
+            font-size: small;
+        }
+        .form-check label{
+            font-size: smaller;
+            min-width: 100px;
+            min-height: 20px;
+            align-items: center;
+            justify-content: center;
+            border: 0.1px solid var(--black);
+            border-radius: 50px;
+            cursor: pointer;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin-bottom: 4px;
+        }
+        .form-check input:checked + label{
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+        .form-check input{
+            display: none;
+        }
+        button.btn.btn-primary,
+        button.btn.btn-secondary{
+            font-size: small;
+            background-color: var(--white);
+            border-color: var(--primary-color);
+            border-radius: 10px;
+            border-width: 2px;
+            margin: 0.3em;
+            width: 120px;
+        }
+        footer{
+            font-size: smaller;
+        }
+        
+        
+        }

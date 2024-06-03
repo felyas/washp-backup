@@ -1,0 +1,26 @@
+:root{
+  --clr-dark: #111111;
+  --clr-light: #F7FAFC;
+  --clr-federal: #071075;
+  --clr-polynesian: #0E4483;
+  --clr-celestial: #4498C7;
+}
+
+.search-bar {
+  height: 48px; /* Set a fixed height for the search bar */
+  padding: 0 1rem; /* Add some padding to the left and right of the search bar */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+#search_text::placeholder {
+  color: var(--clr-dark);
+  opacity: 0.5;
+}
+

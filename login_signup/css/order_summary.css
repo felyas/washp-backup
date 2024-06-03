@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif"
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #F7FAFC;
+  box-sizing: border-box;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #071075;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+#header a {
+  text-decoration: none;
+  color: #F7FAFC;
+}
+
+#header a.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#header a.logo img {
+  height: 40px; /* Adjust the height as necessary */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* Ensure the main content has enough padding to account for the fixed header height */
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #F7FAFC;
+  border-radius: 8px;
+}
+
+
+
+::selection {
+  color: #F7FAFC;
+  background-color: rgb(36, 36, 36);
+}
+
+.form {
+  position: relative;
+  background-color: #F7FAFC;
+  width: 100%;
+  max-width: 500px;
+  /* border-radius: 12px; */
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+}
+
+.form h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #071075;
+  margin-bottom: 10px;
+}
+
+
+.form form {
+  margin: 8px 0;
+}
+
+.form form .error-text{
+  display: none;
+  color: rgb(208, 52, 44);
+  padding: 4px 6px;
+  text-align: center;
+  border-radius: 4px;
+  background: rgb(255, 211, 208);
+  margin-bottom: 6px;
+  border: 1px solid rgb(208, 52, 44);
+}
+
+.form .grid-details{
+  display: flex;
+}
+.form .grid-details .input:first-child{
+  margin-right: 8px;
+  width: 100%;
+}
+
+.form .grid-details .input:last-child{
+  margin-left: 8px;
+  width: 100%;
+}
+.form form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(110, 110, 110);
+  outline: none;
+}
+
+.form form .input input:focus,
+.form form .input input:valid{
+  border: 2px solid rgb(36, 36, 36);
+  transform: 0.1s ease;
+  outline: none;
+}
+
+.form form input.button{
+  height: 45px;
+  border: none;
+  color: #071075;
+  width: 100%;
+  background-color: #F7FAFC;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+  border: 2px solid #071075;
+}
+.form .link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.form .link a{
+  color: #071075;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.form .link a:hover{
+  text-decoration: underline;
+}
+
+ /* for the ole section */
+ .form form .input select {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(110, 110, 110);
+  outline: none;
+}
+
+.form form .input select:focus,
+.form form .input select:valid {
+  border: 2px solid rgb(36, 36, 36);
+  transition: 0.1s ease;
+  outline: none;
+}
+
+
+.submit .button.disabled {
+  background-color: #cccccc; /* Lighter color for disabled state */
+  cursor: not-allowed;
+}
+
+.summary-details {
+  height: 130px; /* Adjust the height as needed */
+  margin-top: 1rem;
+}
+
+.summary-content{
+  margin-top: 1.5rem;
+}
+
+.form .summary-details{
+  color: black;
+}
+
+.titles .summary-details{
+  font-weight: 600;
+  /* letter-spacing: 0.5px; */
+}
+
+/* .form form .profile-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+  margin: 18px 30px;
+  background-color: #F7FAFC;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/upload_icon.png);
+  border-radius: 50%;
+  border: 4px solid rgb(36, 36, 36);
+} */
+
+/* .file-upload {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F7FAFC;
+  background-size: 100% 200%;
+  transition: all 1s;
+  font-size: 14px;
+  cursor: pointer;
+} */
+
+/* form input[type="file"] {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+  cursor: pointer;
+  padding: 20px;
+} */
+
+/* form i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgb(36, 36, 36);
+  z-index: 100;
+  pointer-events: none;
+  cursor: pointer;
+} */
+
+/* .file-upload:hover {
+  background-color: rgb(170, 170, 170);
+} */

@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Warownia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local ('Warownia Regular') url(../fonts/Warownia.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Warownia Extended';
+    font-style: normal;
+    font-weight: normal;
+    src: local ('Warownia Extended') url(../fonts/WarowniaExt.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Warownia Ultra Extended';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Warownia Ultra Extended'), url(../fonts/WarowniaUltExt.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Rimouski';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rimouski'), url(../fonts/rimouski.woff) format('woff');
+}
+
+:root {
+    --primary-color: #071075;
+    --secondary-color: #30A5D8;
+    --blue: #06436F;
+    --white: #F7FAFC;
+    --yellow: #FBEF04;
+    --black: #272D2A;
+}
+
+body {
+    font-family: 'Warownia Regular Extended';
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+a.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar a.nav-link {
+    font-family: 'Warownia';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    width: 125px;
+    letter-spacing: 1.5px;
+
+}
+
+.navbar a.nav-link.active {
+    font-family: Warownia;
+    color: var(--yellow);
+    width: 100px;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--yellow);
+}
+
+.hero h1 {
+    color: #272D2A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+span.hero-text {
+    font-size: 48px;
+    background: linear-gradient(to left, #071075, #30A5D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.btn.btn-primary.border.border-white.border.border-2 {
+    border-radius: 0;
+    margin-right: 20px;
+
+}
+
+a.btn.btn-primary {
+    font-family: Warownia;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-block: 10px;
+    position: inherit;
+    letter-spacing: 1.5px;
+}
+a.btn.btn-secondary {
+    font-family: Warownia;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-block: 10px;
+    position: inherit;
+    letter-spacing: 1.5px;
+    border: 2px solid var(--primary-color);
+}
+
+a.btn.btn-primary:active {
+    color: var(--yellow);
+}
+
+a.btn.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+a.btn.btn-secondary:active {
+    color: var(--yellow);
+
+}
+
+a.btn.btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+div#navbar-nav.mx-auto {
+    margin: 0 auto;
+    justify-content: center;
+}
+.hero {
+    background-image: url('../images/washup-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: left;
+    background-blend-mode: overlay;
+    /* Add this property */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Add this property */
+}
+.how-it-works h1,
+.our-services h1,
+.about-us h1,
+.contact-us h1
+{
+    padding-bottom: 10px;
+}
+.how-it-works p1,
+.our-services p,
+.about-us p,
+.contact-us p {
+    font-family: Poppins, sans-serif;
+    padding-bottom: 30px;
+}
+div.steps-row{
+    padding-top: 40px;
+}
+p.hero-text{
+    color: var(--black);
+    font-family: Warownia;
+}
+
+p.freepickup {
+    background: linear-gradient(to left, #071075, #30A5D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how-it-works,
+.our-services,
+.about-us,
+.contact-us
+ {
+    font-family: Rimouski;
+    text-align: center;
+    padding: 50px 0;
+}
+.about-us p{
+    text-align: left;
+    justify-content: left;
+}
+
+.how-it-works h2 {
+    margin-bottom: 30px;
+}
+
+.step {
+    text-align: left;
+}
+
+.step img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.call-to-action {
+    background-color: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.call-to-action p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.how-it-works,
+.our-services,
+.about-us,
+.contact-us {
+    padding: 60px 0;
+}
+h2.display-5.fw-bold{
+    font-size: 35px;
+}
+
+
+
+.contact-us .form-control {
+    margin-bottom: 15px;
+}
+
+.our-services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+div.row {
+    background-color: FFFFFC;
+
+}
+
+div.step {
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: FFFFFC;
+}
+
+.card img {
+    opacity: 50%;
+    border: 1px solid #071075;
+    height: 350px;
+}
+
+div.col-lg {
+    padding-bottom: 50px;
+
+}
+
+.card-title,
+.card-text {
+    font-family: Warownia;
+    color: var(--black);
+    padding-top: 60px;
+    background: linear-gradient(to left, #071075, #30A5D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p.lead{
+    font-family: Poppins, sans-serif;
+}
+
+
+/* CONTACT */
+
+.contact-wrap {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-in {
+	padding: 40px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	background: url(../images/contact-bg.png);
+	color: var(--black);
+}
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #FFFFFC;
+}
+
+.contact-in:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+.contact-in h1 {
+	font-size: 24px;
+	color: var(--black);
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+	font-size: 16px;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	background: var(--white);
+	color: var(--black);
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: var(--black);
+	border-radius: 50px;
+}
+
+
+.contact-in ul li a {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+}
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+
+.contact-in-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid var(--black);
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: var(--black);
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+	color: var(--black);
+}
+
+.contact-in-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid var(--black);
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	color: var(--black);
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+	color: var(--black);
+}
+
+.contact-in-btn {
+	width: 100%;
+	height: 40px;
+	border: 1px solid var(--black);
+	outline: none;
+	background: transparent;
+	color: var(--black);
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer.text-white.text-center.text-lg-start{
+    background-color: var(--primary-color);
+    font-family: Poppins;
+    width: 100%;
+}
+p.footer-text{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+ul.list-unstyled.mb-0,
+ul.list-unstyled{
+    margin-top: 20px;
+}
+a.footer-brand{
+
+    margin-bottom: 10px;
+}
+div.container.p-5{
+    width: 100%;
+}
+
+    /* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .how-it-works .step,
+    .our-services .service-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .how-it-works .step,
+    .our-services .service-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+    
+    span.hero-text {
+        font-size: 30px;
+    }
+    p.hero-text{
+        font-size: small;
+    }
+    a.btn.btn-primary.border.border-white.border.border-2 {
+        border-radius: 0;
+        margin-right: 20px;
+    
+    }
+    
+    a.btn.btn-primary {
+        font-size: small;
+        border-radius: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-block: 10px;
+        position: inherit;
+        letter-spacing: 1px;
+    }
+    div.step {
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        background-color: FFFFFC;
+        font-size: small;
+    }
+    div.steps-row{
+        padding-top: 40px;
+
+    }
+    div.step-item img{
+        padding-left: 0;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
+#map {
+    width: 100%; }
+    @media (max-width: 767.98px) {
+      #map {
+        height: 300px; } 
+    
+    }
+}
